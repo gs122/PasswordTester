@@ -4,9 +4,6 @@ def test_password(pword):
     strength = 0
     if len(pword) > 14:
         strength += 1
-    # If it contains lowercase letters, strength+=1
-    # Create a class of lowercase chars
-    # Find if there are any characters in pword in the lowercase class
     if re.search(r'[a-z]', pword):
         strength += 1
     if re.search(r'[A-Z]', pword):
